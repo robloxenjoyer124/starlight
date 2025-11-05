@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edl"
+version = "0.1.0"
+description = "edgy youtube downloader with login, 4k, mp3+art, lossless"
+authors = [{name = "edl", email = "edl@example.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "yt-dlp",
+    "keyring",
+    "keyrings.alt",
+    "colorama",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-mock",
+]
+
+[project.scripts]
+edl = "edl.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/example/edl"
+Repository = "https://github.com/example/edl"
