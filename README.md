@@ -1,12 +1,12 @@
 <div align="center">
 
 # 🔍 RoFinder
-**The ultimate lightweight OSINT utility for the Roblox ecosystem.**
+**The ultimate high-performance OSINT suite for the Roblox ecosystem.**
 
 [![GitHub Stars](https://img.shields.io/github/stars/robloxenjoyer124/RoFinder?style=for-the-badge&logo=github&color=FFD700&logoColor=white)](https://github.com/robloxenjoyer124/RoFinder/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/robloxenjoyer124/RoFinder?style=for-the-badge&logo=git&color=007FFF&logoColor=white)](https://github.com/robloxenjoyer124/RoFinder/network/members)
 [![Python Version](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-00ff00?style=for-the-badge)](https://github.com/robloxenjoyer124/RoFinder/graphs/commit-activity)
+[![Status](https://img.shields.io/badge/Status-Operational-00ff00?style=for-the-badge)](https://github.com/robloxenjoyer124/RoFinder)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 [Explore Docs](#-getting-started) · [Report Bug](https://github.com/robloxenjoyer124/RoFinder/issues) · [Request Feature](https://github.com/robloxenjoyer124/RoFinder/issues)
@@ -15,22 +15,25 @@
 
 ---
 
-## 🚀 Overview
-**RoFinder** is a high-performance utility designed to scrape and display essential Roblox user intelligence. Whether you need to verify account ages, check badges, or grab headshots, RoFinder does it with zero bloat and maximum speed.
+## ⚡ Core Engine Capabilities
+RoFinder isn't just a scraper; it's a precision tool for data extraction.
 
-### ✨ Key Features
-* 👤 **Full Profile Fetch:** Get Display Names, Usernames, and User IDs instantly.
-* 📅 **Account Age Tracker:** See exactly when an account was created.
-* 🛡️ **Status Verification:** Check for bans, premium status, and verification badges.
-* 📸 **Avatar Preview:** Fetches the latest high-res headshot URLs.
-* ⚡ **Ultra Fast:** Optimized request handling for instant results.
+* 👤 **Identity Extraction:** Instant Display Name, Username, and ID resolution.
+* 📅 **Temporal Tracking:** Millisecond-accurate account creation timestamps.
+* 🛡️ **Security Audit:** Premium status detection, ban-state checking, and verification badges.
+* 📸 **Visual Assets:** Direct 420x420px high-definition headshot URL generation.
+* 🛰️ **Presence Intel:** Check if a user is currently online or in-game.
 
 ---
 
-## 🛠️ Built With
-* **Python 3.10+** - Core Logic
-* **Requests** - API Interaction
-* **Roblox Web API** - Data Source
+## 📡 API Architecture
+RoFinder communicates with the official Roblox endpoints using high-speed concurrent requests.
+
+| Module | Endpoint | Purpose |
+| :--- | :--- | :--- |
+| 🛠️ **Users API** | users.roblox.com | Fetches core profile metadata. |
+| 🖼️ **Thumbnails** | thumbnails.roblox.com | Pulls high-res avatar renders. |
+| 🎮 **Presence** | presence.roblox.com | Real-time online/offline status. |
 
 ---
 
@@ -42,48 +45,41 @@ python --version
 
 
 ### Installation
-1. Clone the repository:
-git clone https://github.com/robloxenjoyer124/RoFinder.git
-
-2. Navigate to the directory:
-cd RoFinder
-
-3. Install dependencies:
-pip install -r requirements.txt
+git clone https://github.com/robloxenjoyer124/RoFinder.git cd RoFinder pip install -r requirements.txt
 
 
 ### Usage
-Run the main script and follow the on-screen prompts:
 python main.py
 
 
 ---
 
-## 🗺️ Roadmap
+## 🗺️ Development Roadmap
 - [x] Basic User Fetching
 - [x] Multi-threaded Scraping
-- [ ] Discord Webhook Integration
-- [ ] GUI Version (CustomTkinter)
-- [ ] Bulk User Scanning (from .txt)
+- [ ] **Discord Webhook Logging** (Incoming)
+- [ ] **GUI Dashboard** (In Development)
+- [ ] **Bulk .txt Scanner** (In Development)
 
 ---
 
-## 🤝 Contributing
-Contributions make the open-source community amazing!
+## 📊 Project Health
+![RoFinder Stats](https://github-readme-stats.vercel.app/api/pin/?username=robloxenjoyer124&repo=RoFinder&theme=tokyonight)
 
-1. **Fork** the Project
-2. **Create** your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. **Commit** your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** to the Branch (`git push origin feature/AmazingFeature`)
-5. **Open** a Pull Request
+---
+
+## 🤝 Community & Support
+* **Issues:** Found a bug? Open an issue on GitHub.
+* **Stars:** If this tool helped you, drop a ⭐ to support the dev!
+* **Pull Requests:** Want to add a feature? Fork and PR!
 
 ---
 
 ## 📜 License
-Distributed under the **MIT License**. See `LICENSE` for more information.
+Distributed under the **MIT License**. Check the `LICENSE` file for details.
 
 <div align="center">
-  <sub>Built with ❤️ by <a href="https://github.com/robloxenjoyer124">robloxenjoyer124</a></sub>
+  <sub>Developed by <a href="https://github.com/robloxenjoyer124">@robloxenjoyer124</a></sub>
   <br>
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=footer" width="100%"/>
 </div>
